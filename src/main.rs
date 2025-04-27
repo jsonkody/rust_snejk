@@ -292,9 +292,9 @@ async fn main() {
 }
 
 fn compute_speed(speed_factor: f32) -> f32 {
-    // let ln_factor = speed_factor.ln();
-    // (140.0 / (ln_factor * 1.2) + 14.0) / 1000.0
-    return 0.02;
+    let ln_factor = speed_factor.ln();
+    (140.0 / (ln_factor * 1.2) + 14.0) / 1000.0
+    // return 0.02;
 }
 
 fn compute_point_value(speed_factor: f32) -> i32 {
